@@ -1,0 +1,286 @@
+@font-face {
+    font-family: Barlow;
+    src: url("fonts/Barlow-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url("fonts/Barlow-ExtraLight.otf");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url("fonts/Barlow-Medium.otf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    padding: 30px 0 0 30px;
+    background: #EFF6FF;
+}
+
+.container {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    width: 1440px;
+    height: 1000px;
+}
+
+.form-area {
+    background: white;
+    width: 533px;
+    height: 910px;
+    float: left;
+    padding: 91px 77px 0 71px;
+    position: relative;
+}
+
+.background {
+    float: left;
+}
+
+h1 {
+    font-family: Barlow;
+    font-weight: 500;
+    font-size: 29px;
+    color: #2A4A5C;
+}
+
+.first-paragraph {
+    font-family: Barlow;
+    font-weight: 400;
+    font-size: 20px;
+    color: #7B8A92;
+    margin-top: -5px;
+}
+
+.fb-wrapper, .ln-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.fb-wrapper img {
+    position: absolute;
+    width: 19px;
+    top: 48px;
+    left: 13px;
+}
+
+.ln-wrapper img {
+    position: absolute;
+    width: 18px;
+    top: 49px;
+    left: 20px;
+}
+
+.fb-button, .ln-button {
+    height: 42px;
+    width: 246px;
+    border: none;
+    color: white;
+    font-family: Barlow;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.fb-button {
+    margin: 37px 28px 0 3px;
+    background: #255A9B;
+}
+
+.ln-button {
+    margin: 37px 0 0 3px;
+    background: #0076B6;
+}
+
+.line {
+    font-family: Barlow;
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    margin: 51px 0 47px 0;
+}
+
+.line span {
+    color: #2a4a5c;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+    padding: 0px 7px;
+}
+
+.line:after {
+    content: '';
+    display: block;
+    width: 48%;
+    height: 1px;
+    background-color: #EEEEEE;
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    margin-top: 1px;
+    z-index: 0;
+}
+
+.mail-input, .phone-input {
+    float: left;
+    display: inline-block;
+    font-family: Barlow;
+    font-size: 17px;
+    color: #2A4A5C;
+    height: 37px;
+    width: 235px;
+    margin-left: 3px;
+    margin-bottom: 58px;
+    padding-left: 9px;
+    padding-top: 17px;
+    border-top: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+
+.mail-input {
+    border-left: 1px solid #3698FB;
+    margin-right: 32px;
+}
+
+.mail-input::-webkit-input-placeholder {
+    transform: translateY(-25px);
+    font-family: Barlow;
+    font-size: 14px;
+    color: #96A5B1;
+}
+
+.phone-input::-webkit-input-placeholder {
+    transform: translateY(-25px);
+    font-family: Barlow;
+    font-size: 14px;
+    color: #96A5B1;
+}
+
+h2 {
+    font-family: Barlow;
+    color: #2A4A5C;
+    font-weight: normal;
+    font-size: 21px;
+    display: inline;
+    letter-spacing: 0.012em;
+}
+
+.second-paragraph {
+    font-family: Barlow;
+    color: #7B8A92;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 12px 0 47px 0;
+    letter-spacing: 0.01em;
+}
+
+.info {
+    height: 11px;
+    width: 22px;
+}
+
+.info-wrap {
+    font-family: Barlow;
+    font-weight: normal;
+    font-size: 16px;
+    word-spacing: 0.13em;
+}
+
+.radio {
+    margin-right: 18px;
+}
+
+.radio input {
+    display: none; /* Прячем исходный переключатель */
+}
+
+.radio span {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%; /* Круглый переключатель */
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5); /* Тень внутри */
+    vertical-align: middle;
+    margin: 0 4px 2px 3px;
+}
+
+.radio input:checked + span {
+    background: #3698FB; /* Голубой цвет фона */
+    box-shadow: none;
+}
+
+/* Добавляем белую точку по центру */
+.radio input:checked + span::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.annotation {
+    width: 246px;
+    height: 70px;
+    position: absolute;
+    bottom: 270px;
+    left: 77px;
+    padding: 0 0 10px 10px;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 200;
+    color: #AFAFAF;
+    border-radius: 3px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.agree {
+    display: block;
+    margin: 135px 0 53px 0;
+    color: #000;
+    cursor: default;
+    font-weight: normal;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.agree input {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.agree span {
+    vertical-align: middle;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 200;
+    color: #AFAFAF;
+}
+
+.agree a {
+    color: #3698FB;
+}
+
+.create-account {
+    border: none;
+    margin-left: 3px;
+    background: #3698FB;
+    color: white;
+    width: 246px;
+    height: 42px;
+    border-radius: 4px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
