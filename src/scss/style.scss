@@ -1,0 +1,126 @@
+$white: #ffffff;
+$light-gray: #EAEAEA;
+$light-green: #D9FFF5;
+$background-gray: #F8F8F8;
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+  url(/src/fonts/TTLakes-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+  url('/src/fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+  url('/src/fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@media (min-width: 320px) {
+  body {
+    max-width: 320px;
+    margin: 0;
+    font-family: "TT Lakes", sans-serif;
+  }
+  header {
+    color: $white;
+    width: 100%;
+  }
+
+  .upper-menu {
+    height: 88px;
+    border-bottom: 1px solid $light-green;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+
+  .upper-menu__button, .upper-menu__logo, .upper-menu__divider {
+    display: inline-block;
+
+  }
+
+  .upper-menu__button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background: no-repeat center;
+    border: none;
+    cursor: pointer;
+  }
+
+  .upper-menu__button:nth-of-type(1) {
+    background-image: url("/src/img/burger.svg");
+  }
+  .upper-menu__button:nth-of-type(2) {
+    background-image: url("/src/img/repair.svg");
+  }
+
+  .upper-menu__button:nth-of-type(3) {
+    background-image: url("/src/img/checkstatus.svg");
+  }
+
+  .upper-menu__logo {
+    width: 97px;
+    height: 51px;
+    background-image: url("/src/img/logo.svg");
+  }
+
+  .upper-menu__divider {
+    width: 2px;
+    height: 32px;
+    background-image: url("/src/img/divider.svg");
+  }
+
+  main {
+    height: 2730px;
+    background-color: $background-gray;
+  }
+
+  .title-wrapper {
+    padding: 24px 16px;
+  }
+
+  .title-wrapper__title {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+
+
